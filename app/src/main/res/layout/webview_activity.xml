@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/web_view_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_gravity="top"
+        android:progress="20"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/progress"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view"></WebView>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:fabSize="normal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="2dp"
+        android:elevation="5dp"
+        android:src="@drawable/up_arrow"
+        app:backgroundTint="@color/main_fab">
+
+        </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/fab"
+        app:fabSize="mini"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:src="@drawable/right_arrow"
+        app:backgroundTint="#b6313131">
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/fab_1"
+        app:fabSize="mini"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:elevation="5dp"
+        android:src="@drawable/left_arrow"
+        app:backgroundTint="#b6313131">
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/fab_2"
+        app:fabSize="mini"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:src="@drawable/bookmark"
+        app:backgroundTint="#b6313131">
+        </android.support.design.widget.FloatingActionButton>-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/fab_2"
+        app:fabSize="mini"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/share"
+        app:backgroundTint="@color/fab_share">
+    </android.support.design.widget.FloatingActionButton>
+
+</RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

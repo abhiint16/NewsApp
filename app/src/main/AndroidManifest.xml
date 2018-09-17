@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sixteenmb.abhishekint.liberty">
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--tools:overrideLibrary="flikster.com.imagegrad"-->
+    <!--tools:replace="android:icon, android:label, android:theme, android:name, android:roundIcon"-->
+    <application
+        android:largeHeap="true"
+        android:name="com.sixteenmb.abhishekint.liberty.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sixteenmb.abhishekint.liberty.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sixteenmb.abhishekint.liberty.Source_click"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.sixteenmb.abhishekint.liberty.MainActivity"></activity>
+
+        <activity android:name="com.sixteenmb.abhishekint.liberty.WebView_Activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.sixteenmb.abhishekint.liberty.Source_click"></activity>
+
+        <activity android:name="com.sixteenmb.abhishekint.liberty.Send_direct_msg"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+
+</manifest>

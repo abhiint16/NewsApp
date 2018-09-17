@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b0a16</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#9b0a16</color>
+    <color name="white">#fff</color>
+    <!--<color name="toolbar_main_activity">#d60004</color>-->
+    <color name="black">#000</color>
+    <color name="recyclervire_back">#e6e6e6</color>
+    <color name="tab_layout">#9b0a16</color>
+    <color name="text_color_mainactivty_des">#232323</color>
+    <color name="main_fab">#b61a5b07</color>
+    <color name="fab_share">#b6010261</color>
+    <color name="tabTextUnselected">#bfbfbf</color>
+    <color name="toolbar_main_activity">#151515</color>
+    <color name="main_tab">#000000</color>
+    <color name="country_color">#d60004</color>
+</resources>
