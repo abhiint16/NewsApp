@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/recyclervire_back"
@@ -14,6 +14,6 @@
     android:scrollbarThumbVertical="@drawable/red_scrollbar"
     android:scrollbarFadeDuration="5"
     android:scrollbarSize="10dp">
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

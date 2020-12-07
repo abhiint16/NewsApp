@@ -1,8 +1,8 @@
 package com.sixteenmb.abhishekint.liberty;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class NewAdapter extends FragmentStatePagerAdapter {
         super(fm);
     }*/
 
-    public NewAdapter(FragmentManager fm,int i) {
+    public NewAdapter(FragmentManager fm, int i) {
 
 
         super(fm);

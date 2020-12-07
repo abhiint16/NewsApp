@@ -1,82 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/source_click_coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sixteenmb.abhishekint.liberty.Source_click"
     android:fitsSystemWindows="true"
-    android:id="@+id/source_click_coordinator">
+    tools:context="com.sixteenmb.abhishekint.liberty.Source_click">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/source_click_appbarlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/source_click_appbarlayout">
+        android:layout_height="wrap_content">
 
-        <android.support.design.widget.CollapsingToolbarLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/source_click_collapsing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="left"
             android:fitsSystemWindows="true"
-            android:id="@+id/source_click_collapsing"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="20dp"
             app:expandedTitleMarginStart="20dp"
-            android:layout_gravity="left"
             app:expandedTitleTextAppearance="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/source_click_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
-                android:fitsSystemWindows="true"
                 android:layout_gravity="fill_vertical"
-                android:id="@+id/source_click_recyclerview"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:fitsSystemWindows="true">
 
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/source_click_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:id="@+id/source_click_toolbar"
+                android:elevation="10dp"
                 android:titleTextColor="@color/white"
-                app:layout_collapseMode="pin"
-                android:elevation="10dp">
+                app:layout_collapseMode="pin">
 
-            </android.support.v7.widget.Toolbar>
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/source_click_nested"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:fadeScrollbars="false"
         android:scrollbarFadeDuration="0"
-        android:id="@+id/source_click_nested">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <android.support.design.widget.TabLayout
+
+            <TableLayout
+                android:id="@+id/source_click_tab"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                app:tabIndicatorHeight="1dp"
-                app:tabIndicatorColor="@color/white"
                 android:background="@color/tab_layout"
-                android:id="@+id/source_click_tab"
+                app:tabIndicatorColor="@color/white"
+                app:tabIndicatorHeight="1dp"
                 app:tabSelectedTextColor="@color/white">
 
-            </android.support.design.widget.TabLayout>
-    <android.support.v4.view.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/source_click_pager">
+            </TableLayout>
 
-    </android.support.v4.view.ViewPager>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/source_click_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.viewpager.widget.ViewPager>
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

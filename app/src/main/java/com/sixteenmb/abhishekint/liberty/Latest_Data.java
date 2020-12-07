@@ -1,6 +1,7 @@
 package com.sixteenmb.abhishekint.liberty;
 
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
